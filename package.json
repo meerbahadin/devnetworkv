@@ -1,0 +1,30 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "Social Network For Developers",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client\""
+  },
+  "author": "Meer Bahadin",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "gravatar": "^1.8.0",
+    "gravatar-url": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
