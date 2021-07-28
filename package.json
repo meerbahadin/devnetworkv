@@ -7,6 +7,7 @@
     "start": "node server",
     "server": "nodemon app",
     "client": "npm start --prefix client",
+    "build": "cd client && npm install && npm run build",
     "dev": "concurrently \"npm run server \" \"npm run client\""
   },
   "author": "Meer Bahadin",
